@@ -137,6 +137,8 @@ hr{
 
 .course-author{
     margin-bottom: 10px;
+    color: #ED6B4F;
+    font-size: 15px;
 }
 
 .course-info{
@@ -168,4 +170,55 @@ hr{
     color: #ED6B4F;
     padding: 3px 8px 3px;
     border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(237, 109, 80, 0.2);
+}
+
+/* responsive style */
+
+/* mobile devices */
+
+@media only screen and (max-width:688px){
+    .container{
+        width: 90%;
+    }
+    .section-title{
+        text-align: center;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+    .player-name{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .blog-info{
+        margin-left: 0;
+    }
+    .courses{
+        text-align: center;
+        grid-row-gap: 25px;
+    }
+    .course{
+        margin: 0 auto;
+    }
+}
+
+/* tablate devices */
+
+@media only screen and (min-width:688px) and (max-width:992px){
+    .container{
+        width: 90%;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .courses{
+        grid-row-gap: 25px;
+    }
 }
