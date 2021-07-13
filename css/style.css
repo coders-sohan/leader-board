@@ -177,15 +177,9 @@ hr{
 
 /* mobile devices */
 
-@media only screen and (min-width:280px) and (max-width:688px){
-    .container{
-        width: 100%;
-    }
-}
-
 @media only screen and (max-width:688px){
     .container{
-        width: 90%;
+        width: 95%;
     }
     .section-title{
         text-align: center;
