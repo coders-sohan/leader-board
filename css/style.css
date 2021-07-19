@@ -67,7 +67,6 @@ ul{
 
 .row{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -145,6 +144,10 @@ ul{
 }
 
 @media only screen and (max-width:991px){
+    .logo{
+        margin-left: 5px;
+    }
+
     .nav-toggler{
         display: flex;
     }
